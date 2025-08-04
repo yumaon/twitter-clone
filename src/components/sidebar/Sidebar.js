@@ -9,6 +9,7 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { Button } from '@mui/material';
 
 function Sidebar() {
   return (
@@ -26,6 +27,7 @@ function Sidebar() {
       <SidebarOption text="プロフィール" Icon={Person2OutlinedIcon}/>
       <SidebarOption text="もっとみる" Icon={MoreHorizOutlinedIcon}/>
       {/* ツイートボタン */}
+      <Button variant='outlined' className='sidebar_tweet'>ツイートする</Button>
     </div>
   )
 }
